@@ -1,9 +1,13 @@
 * {
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 body {
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  background-color: hsl(230, 14%, 8%);
+
   color: aliceblue;
   /* font-optical-sizing: auto;
     font-weight: weight;
@@ -49,6 +53,16 @@ h3 {
   margin-left: 20px;
 }
 
+p {
+  margin-left: 20px;
+  color: hsl(235, 45%, 70%);
+  font-size: 13px;
+}
+
+li {
+  list-style-type: none;
+}
+
 .userimg {
   margin: 20px 20px;
   max-width: 80px;
@@ -59,16 +73,30 @@ h3 {
 
 .categorylogo {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  max-width: 70px;
+  top: -11px;
+  right: 15px;
+  max-width: 60px;
+  z-index: 0;
+}
+
+.userName {
+  padding: 20px;
+}
+
+.selectPeriod {
+  margin-top: auto;
+  padding: 10px;
+  background-color: hsl(235, 46%, 20%);
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+  height: 200px;
   z-index: 1;
 }
 
-.categorylogo img {
+/* .categorylogo img {
   max-width: 70px;
   height: auto;
-}
+} */
 
 /* div {
   border: 1px solid black;
@@ -76,9 +104,13 @@ h3 {
 } */
 
 .userCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   grid-area: header;
   background-color: hsl(246, 80%, 60%);
-  min-height: 200px;
+  min-height: 250px;
+  padding-bottom: 50px;
   border-radius: 20px;
 }
 
@@ -126,9 +158,13 @@ h3 {
 }
 
 .specs {
+  position: relative;
   background-color: hsl(235, 46%, 20%);
   border-radius: 20px;
   height: 200px;
+  padding: 10px;
+  margin-top: 37px;
+  z-index: 1;
 }
 
 .specs:hover {
