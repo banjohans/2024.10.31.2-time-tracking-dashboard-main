@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  color: aliceblue;
+  /* font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; */
+}
+
+main {
+  padding: 50px;
+  display: grid;
+  max-width: 90%;
+  min-height: 60vh;
+  margin-inline: auto;
+  gap: 20px;
+  grid-template-areas:
+    "header two three four"
+    "header five six seven";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+}
+
+@media (max-width: 600px) {
+  main {
+    grid-template-areas:
+      "header"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven";
+    grid-template-columns: 1fr;
+  }
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  margin-left: 20px;
+}
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.userimg {
+  margin: 20px 20px;
+  max-width: 80px;
+  /* padding: 20px 20px; */
+  border: solid;
+  border-radius: 100px;
+}
+
+.categorylogo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  max-width: 70px;
+  z-index: 1;
+}
+
+.categorylogo img {
+  max-width: 70px;
+  height: auto;
+}
+
+/* div {
+  border: 1px solid black;
+  padding: 10px;
+} */
+
+.userCard {
+  grid-area: header;
+  background-color: hsl(246, 80%, 60%);
+  min-height: 200px;
+  border-radius: 20px;
+}
+
+.categoryCard {
+  position: relative;
+  border-radius: 20px 20px 20px 20px;
+  background-color: hsl(226, 43%, 10%);
+  overflow: hidden;
+}
+
+#work {
+  grid-area: two;
+  min-height: 200px;
+  background-color: hsl(15, 100%, 70%);
+}
+
+#play {
+  grid-area: three;
+  min-height: 200px;
+  background-color: hsl(195, 74%, 62%);
+}
+
+#study {
+  grid-area: four;
+  min-height: 200px;
+  background-color: hsl(348, 100%, 68%);
+}
+
+#exercise {
+  grid-area: five;
+  min-height: 200px;
+  background-color: hsl(145, 58%, 55%);
+}
+
+#social {
+  grid-area: six;
+  min-height: 200px;
+  background-color: hsl(264, 64%, 52%);
+}
+
+#selfCare {
+  grid-area: seven;
+  min-height: 200px;
+  background-color: hsl(43, 84%, 65%);
+}
+
+.specs {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 20px;
+  height: 200px;
+}
+
+.specs:hover {
+  background-color: hsl(236, 100%, 60%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ### Primary
+
+- Blue: hsl(246, 80%, 60%)
+
+### Neutral
+
+- Very dark blue: hsl(226, 43%, 10%)
+- Dark blue: hsl(235, 46%, 20%)
+- Desaturated blue: hsl(235, 45%, 61%)
+- Pale Blue: hsl(236, 100%, 87%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px (card titles e.g. Work, Play) */

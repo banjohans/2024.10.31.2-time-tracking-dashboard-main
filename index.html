@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Bitter:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="userCard">
+        <div class="userName">
+          <img
+            class="userimg"
+            src="./images/image-jeremy.png"
+            alt="Jeremy Robson"
+          />
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+        <div class="selectPeriod">
+          <ul>
+            <li>Daily</li>
+            <li>Weekly</li>
+            <li>Monthly</li>
+          </ul>
+        </div>
+      </div>
+      <div class="categoryCard" id="work">
+        <div class="workGraphic">
+          <img src="./images/icon-work.svg" class="categorylogo" alt="work" />
+          <div class="specs">
+            <h3>Work</h3>
+            <h1>5hrs</h1>
+            <!-- daily -->
+            Previous - 7hrs
+            <!-- daily -->
+            32hrs
+            <!-- weekly -->
+            Previous - 36hrs
+            <!-- weekly -->
+            103hrs
+            <!-- monthly -->
+            Previous - 128hrs
+            <!-- monthly -->
+          </div>
+        </div>
+      </div>
+
+      <div class="categoryCard" id="play">
+        <div class="playGraphic">
+          <img src="./images/icon-play.svg" class="categorylogo" alt="play" />
+          <div class="specs">
+            <h3>Play</h3>
+            <h1>1hr</h1>
+            <!-- daily -->
+            Previous - 2hrs
+            <!-- daily -->
+            10hrs
+            <!-- weekly -->
+            Previous - 8hrs
+            <!-- weekly -->
+            23hrs
+            <!-- monthly -->
+            Previous - 29hrs
+            <!-- monthly -->
+          </div>
+        </div>
+      </div>
+      <div class="categoryCard" id="study">
+        <div class="studyGraphic">
+          <img src="./images/icon-study.svg" class="categorylogo" alt="study" />
+          <div class="specs">
+            <h3>Study</h3>
+            <h1>0hrs</h1>
+            <!-- daily -->
+            Previous - 1hr
+            <!-- daily -->
+            4hrs
+            <!-- weekly -->
+            Previous - 7hrs
+            <!-- weekly -->
+            13hrs
+            <!-- monthly -->
+            Previous - 19hrs
+            <!-- monthly -->
+          </div>
+        </div>
+      </div>
+      <div class="categoryCard" id="exercise">
+        <div class="exerciseGraphic">
+          <img
+            src="./images/icon-exercise.svg"
+            class="categorylogo"
+            alt="exercise"
+          />
+          <div class="specs">
+            <h3>Exercise</h3>
+            <h1>1hr</h1>
+            <!-- daily -->
+            Previous - 1hr
+            <!-- daily -->
+            4hrs
+            <!-- weekly -->
+            Previous - 5hrs
+            <!-- weekly -->
+            11hrs
+            <!-- monthly -->
+            Previous - 18hrs
+            <!-- monthly -->
+          </div>
+        </div>
+      </div>
+      <div class="categoryCard" id="social">
+        <div class="socialGraphic">
+          <img
+            src="./images/icon-social.svg"
+            class="categorylogo"
+            alt="social"
+          />
+          <div class="specs">
+            <h3>Social</h3>
+            <h1>1hr</h1>
+            <!-- daily -->
+            Previous - 3hrs
+            <!-- daily -->
+            5hrs
+            <!-- weekly -->
+            Previous - 10hrs
+            <!-- weekly -->
+            21hrs
+            <!-- monthly -->
+            Previous - 23hrs
+            <!-- monthly -->
+          </div>
+        </div>
+      </div>
+      <div class="categoryCard" id="selfCare">
+        <div class="selfCareGraphic">
+          <img
+            src="./images/icon-self-care.svg"
+            class="categorylogo"
+            alt="self care"
+          />
+          <div class="specs">
+            <h3>Self Care</h3>
+            <h1>0hrs</h1>
+            <!-- daily -->
+            Previous - 1hr
+            <!-- daily -->
+            2hrs
+            <!-- weekly -->
+            Previous - 2hrs
+            <!-- weekly -->
+            7hrs
+            <!-- monthly -->
+            Previous - 11hrs
+            <!-- monthly -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/banjohans" target="_blank">banjohans</a>.
+    </div>
+  </body>
+</html>
