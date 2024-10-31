@@ -33,7 +33,7 @@ fetchAndPopulateCategories();
 
 // Event listeners for switching timeframes (daily, weekly, monthly)
 document.querySelectorAll(".selectPeriod li").forEach((item) => {
-  item.addEventListener("click", () => {
+  item.addEventListener("mouseover", () => {
     const timeframe = item.textContent.toLowerCase(); // e.g., "daily", "weekly", "monthly"
     fetchAndPopulateCategories(timeframe); // Update display based on selected timeframe
   });
