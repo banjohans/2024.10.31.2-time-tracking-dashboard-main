@@ -21,9 +21,12 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <main>
+      <!-- main user card -->
       <div class="userCard">
+        <!-- top deck -->
         <div class="userName">
           <img
             class="userimg"
@@ -33,6 +36,7 @@
           <p>Report for</p>
           <h1>Jeremy Robson</h1>
         </div>
+        <!-- lower deck -->
         <div class="selectPeriod">
           <ul>
             <li>Daily</li>
@@ -41,67 +45,40 @@
           </ul>
         </div>
       </div>
+      <!-- category cards | work -->
       <div class="categoryCard" id="work">
         <div class="workGraphic">
           <img src="./images/icon-work.svg" class="categorylogo" alt="work" />
           <div class="specs">
             <h3>Work</h3>
-            <h1>5hrs</h1>
-            <!-- daily -->
-            Previous - 7hrs
-            <!-- daily -->
-            32hrs
-            <!-- weekly -->
-            Previous - 36hrs
-            <!-- weekly -->
-            103hrs
-            <!-- monthly -->
-            Previous - 128hrs
-            <!-- monthly -->
+            <h1 class="current-hours">5hrs</h1>
+            <p class="previous-hours">Last week - 7hrs</p>
           </div>
         </div>
       </div>
-
+      <!-- category cards | play -->
       <div class="categoryCard" id="play">
         <div class="playGraphic">
           <img src="./images/icon-play.svg" class="categorylogo" alt="play" />
           <div class="specs">
             <h3>Play</h3>
-            <h1>1hr</h1>
-            <!-- daily -->
-            Previous - 2hrs
-            <!-- daily -->
-            10hrs
-            <!-- weekly -->
-            Previous - 8hrs
-            <!-- weekly -->
-            23hrs
-            <!-- monthly -->
-            Previous - 29hrs
-            <!-- monthly -->
+            <h1 class="current-hours">1hr</h1>
+            <p class="previous-hours">Last week - 2hrs</p>
           </div>
         </div>
       </div>
+      <!-- category cards | study -->
       <div class="categoryCard" id="study">
         <div class="studyGraphic">
           <img src="./images/icon-study.svg" class="categorylogo" alt="study" />
           <div class="specs">
             <h3>Study</h3>
-            <h1>0hrs</h1>
-            <!-- daily -->
-            Previous - 1hr
-            <!-- daily -->
-            4hrs
-            <!-- weekly -->
-            Previous - 7hrs
-            <!-- weekly -->
-            13hrs
-            <!-- monthly -->
-            Previous - 19hrs
-            <!-- monthly -->
+            <h1 class="current-hours">0hrs</h1>
+            <p class="previous-hours">Last week - 1hr</p>
           </div>
         </div>
       </div>
+      <!-- category cards | exercise -->
       <div class="categoryCard" id="exercise">
         <div class="exerciseGraphic">
           <img
@@ -111,21 +88,12 @@
           />
           <div class="specs">
             <h3>Exercise</h3>
-            <h1>1hr</h1>
-            <!-- daily -->
-            Previous - 1hr
-            <!-- daily -->
-            4hrs
-            <!-- weekly -->
-            Previous - 5hrs
-            <!-- weekly -->
-            11hrs
-            <!-- monthly -->
-            Previous - 18hrs
-            <!-- monthly -->
+            <h1 class="current-hours">1hr</h1>
+            <p class="previous-hours">Last week - 1hr</p>
           </div>
         </div>
       </div>
+      <!-- category cards | social -->
       <div class="categoryCard" id="social">
         <div class="socialGraphic">
           <img
@@ -135,22 +103,13 @@
           />
           <div class="specs">
             <h3>Social</h3>
-            <h1>1hr</h1>
-            <!-- daily -->
-            Previous - 3hrs
-            <!-- daily -->
-            5hrs
-            <!-- weekly -->
-            Previous - 10hrs
-            <!-- weekly -->
-            21hrs
-            <!-- monthly -->
-            Previous - 23hrs
-            <!-- monthly -->
+            <h1 class="current-hours">1hr</h1>
+            <p class="previous-hours">Last week - 3hrs</p>
           </div>
         </div>
       </div>
-      <div class="categoryCard" id="selfCare">
+      <!-- category cards | self care -->
+      <div class="categoryCard" id="selfcare">
         <div class="selfCareGraphic">
           <img
             src="./images/icon-self-care.svg"
@@ -159,23 +118,14 @@
           />
           <div class="specs">
             <h3>Self Care</h3>
-            <h1>0hrs</h1>
-            <!-- daily -->
-            Previous - 1hr
-            <!-- daily -->
-            2hrs
-            <!-- weekly -->
-            Previous - 2hrs
-            <!-- weekly -->
-            7hrs
-            <!-- monthly -->
-            Previous - 11hrs
-            <!-- monthly -->
+            <h1 class="current-hours">0hrs</h1>
+            <p class="previous-hours">Last week - 1hr</p>
           </div>
         </div>
       </div>
     </main>
 
+    <!-- footer and attributions -->
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -183,5 +133,6 @@
       >. Coded by
       <a href="https://github.com/banjohans" target="_blank">banjohans</a>.
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
