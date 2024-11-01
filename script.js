@@ -11,15 +11,15 @@ function fetchAndPopulateCategories(timeframe = "daily") {
       return response.json();
     })
 
-    // Formating the category strings to lowercase, and removing potential spaces to make it work as code
+    // Formating relevant HTML ID categories to lowercase, removing potential spaces to make it work in JS language
     .then((data) => {
       data.forEach((category) => {
-        // Locate card by category
+        // Locate card by ID category
         const card = document.getElementById(
           category.title.toLowerCase().replace(" ", "")
         );
 
-        // Update cards with corresponding categoric information
+        // Update cards with corresponding data to the category
         if (card) {
           // this line selects the card category from h3 which is only used for this operation
           // following, it pulls the consequent categories of current- and previous hours, existing within the same card's div.
@@ -27,7 +27,7 @@ function fetchAndPopulateCategories(timeframe = "daily") {
           card.querySelector(
             ".current-hours"
             // the following line pulls numbers from the JSON "timeframes" to be exchanged with the
-            // categories 'current' and 'previous' hours, and ad's 'hrs' to the string.
+            // categories 'current' and 'previous' hours, and adds 'hrs' to the string.
           ).textContent = `${category.timeframes[timeframe].current}hrs`;
           card.querySelector(
             ".previous-hours"
@@ -39,13 +39,15 @@ function fetchAndPopulateCategories(timeframe = "daily") {
     .catch((error) => console.error("Error fetching data", error));
 }
 
-// Call to default population of categories
+// Call to fetch and populate the categories correspondingly
 fetchAndPopulateCategories();
 
-// Event listeners for switching timeframes (daily, weekly, monthly)
+// Event listeners for where to switch timeframes (daily, weekly, monthly) from - the li in the selectPeriod class card.
 document.querySelectorAll(".selectPeriod li").forEach((item) => {
+  // an arrow function to listen for new data when mouseover on li from .selectPeriod
   item.addEventListener("mouseover", () => {
-    const timeframe = item.textContent.toLowerCase(); // e.g., "daily", "weekly", "monthly"
-    fetchAndPopulateCategories(timeframe); // Update display based on selected timeframe
+    const timeframe = item.textContent.toLowerCase(); // create a new const to be defined by items textcontent converted to lowercase.
+    fetchAndPopulateCategories(timeframe); // Fetch and display information from different timeframes based on the selected li
   });
 });
+//we're done!
